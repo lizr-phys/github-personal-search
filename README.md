@@ -117,7 +117,7 @@ Detailed formulas and weights live in [docs/search-and-ranking.md](docs/search-a
 
 ### Requirements
 
-- Node.js 22.12 or newer
+- Node.js 22.13 or newer
 - Corepack and pnpm 11.9
 - Docker only when running PostgreSQL, Redis, and Mailpit locally
 
