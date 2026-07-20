@@ -1,5 +1,10 @@
 minimumReleaseAgeExclude:
   - bullmq@5.80.8
+allowBuilds:
+  "esbuild@0.25.12 || 0.28.1": true
+  msgpackr-extract@3.0.4: true
+  sharp@0.34.5: true
+  unrs-resolver@1.12.2: true
 overrides:
   esbuild@<=0.24.2: 0.28.1
   postcss@<8.5.10: 8.5.19
