@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-07-19T04:44:34.869Z",
+  "repositoryCount": 20000,
+  "generationMs": 954.49,
+  "feedRankAndBatchMs": 407.65,
+  "coldSearchMs": 8302.86,
+  "warmSearchMs": 1894.68,
+  "resultCount": 30,
+  "feedUnique": 10,
+  "feedClusters": 3,
+  "memory": {
+    "beforeMb": 67.2,
+    "afterMb": 606.8
+  }
+}

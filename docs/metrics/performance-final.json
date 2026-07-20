@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-07-19T05:32:10.632Z",
+  "baseUrl": "http://127.0.0.1:3200",
+  "runtime": "server-configured",
+  "scenarios": {
+    "feedColdMs": 25.26,
+    "feedWarm": {
+      "count": 12,
+      "p50Ms": 7.73,
+      "p95Ms": 12.32,
+      "p99Ms": 12.32,
+      "maxMs": 12.32
+    },
+    "feedNext": {
+      "count": 4,
+      "p50Ms": 8.37,
+      "p95Ms": 8.91,
+      "p99Ms": 8.91,
+      "maxMs": 8.91
+    },
+    "feedback": {
+      "count": 8,
+      "p50Ms": 6.62,
+      "p95Ms": 12.82,
+      "p99Ms": 12.82,
+      "maxMs": 12.82
+    },
+    "searchColdMs": 116.06,
+    "searchWarm": {
+      "count": 8,
+      "p50Ms": 25.35,
+      "p95Ms": 35.66,
+      "p99Ms": 35.66,
+      "maxMs": 35.66
+    },
+    "searchBurst": {
+      "count": 10,
+      "p50Ms": 117.8,
+      "p95Ms": 218.27,
+      "p99Ms": 218.27,
+      "maxMs": 218.27,
+      "concurrency": 10,
+      "wallMs": 222.01,
+      "throughputRps": 45.04,
+      "errors": 0
+    },
+    "readEndpoints": {
+      "/api/library": 17.44,
+      "/api/trends?window=7d": 13.11,
+      "/api/repositories/jupyterlab/jupyterlab": 17.48
+    }
+  },
+  "process": {
+    "node": "v24.14.0",
+    "rssMb": 67.9
+  }
+}

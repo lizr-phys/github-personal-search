@@ -1,0 +1,5 @@
+minimumReleaseAgeExclude:
+  - bullmq@5.80.8
+overrides:
+  esbuild@<=0.24.2: 0.28.1
+  postcss@<8.5.10: 8.5.19

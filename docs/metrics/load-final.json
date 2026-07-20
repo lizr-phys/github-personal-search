@@ -1,0 +1,382 @@
+{
+  "generatedAt": "2026-07-19T06:03:29.768Z",
+  "baseUrl": "http://127.0.0.1:3200",
+  "host": {
+    "platform": "win32 10.0.22000",
+    "cpuCount": 8,
+    "totalMemoryMb": 15730.4,
+    "node": "v24.14.0"
+  },
+  "scenarios": [
+    {
+      "name": "normal",
+      "concurrency": 5,
+      "total": 100,
+      "succeeded": 100,
+      "throttled": 0,
+      "failed": 0,
+      "errorRate": 0,
+      "throttleRate": 0,
+      "wallMs": 1166.35,
+      "responseThroughputRps": 85.74,
+      "acceptedThroughputRps": 85.74,
+      "latency": {
+        "count": 100,
+        "p50Ms": 56.46,
+        "p95Ms": 97.27,
+        "p99Ms": 151.27,
+        "maxMs": 185.36
+      },
+      "endpoints": {
+        "search": {
+          "count": 20,
+          "p50Ms": 60.69,
+          "p95Ms": 121.62,
+          "p99Ms": 185.36,
+          "maxMs": 185.36
+        },
+        "feed": {
+          "count": 10,
+          "p50Ms": 62,
+          "p95Ms": 128.91,
+          "p99Ms": 128.91,
+          "maxMs": 128.91
+        },
+        "feed-next": {
+          "count": 10,
+          "p50Ms": 65.12,
+          "p95Ms": 137.21,
+          "p99Ms": 137.21,
+          "maxMs": 137.21
+        },
+        "library": {
+          "count": 10,
+          "p50Ms": 68.79,
+          "p95Ms": 151.27,
+          "p99Ms": 151.27,
+          "maxMs": 151.27
+        },
+        "trends": {
+          "count": 10,
+          "p50Ms": 50.8,
+          "p95Ms": 78.66,
+          "p99Ms": 78.66,
+          "maxMs": 78.66
+        },
+        "detail": {
+          "count": 10,
+          "p50Ms": 35.02,
+          "p95Ms": 84.83,
+          "p99Ms": 84.83,
+          "maxMs": 84.83
+        },
+        "feedback": {
+          "count": 10,
+          "p50Ms": 36.03,
+          "p95Ms": 87.35,
+          "p99Ms": 87.35,
+          "maxMs": 87.35
+        },
+        "profile": {
+          "count": 10,
+          "p50Ms": 32.24,
+          "p95Ms": 81.77,
+          "p99Ms": 81.77,
+          "maxMs": 81.77
+        },
+        "observability": {
+          "count": 10,
+          "p50Ms": 28.57,
+          "p95Ms": 60.01,
+          "p99Ms": 60.01,
+          "maxMs": 60.01
+        }
+      },
+      "failureExamples": [],
+      "throttleExamples": []
+    },
+    {
+      "name": "peak",
+      "concurrency": 20,
+      "total": 300,
+      "succeeded": 229,
+      "throttled": 71,
+      "failed": 0,
+      "errorRate": 0,
+      "throttleRate": 0.2367,
+      "wallMs": 1727.46,
+      "responseThroughputRps": 173.67,
+      "acceptedThroughputRps": 132.56,
+      "latency": {
+        "count": 229,
+        "p50Ms": 105.09,
+        "p95Ms": 212.82,
+        "p99Ms": 217.82,
+        "maxMs": 225.07
+      },
+      "throttleLatency": {
+        "count": 71,
+        "p50Ms": 91.2,
+        "p95Ms": 114.37,
+        "p99Ms": 193.75,
+        "maxMs": 193.75
+      },
+      "endpoints": {
+        "feed": {
+          "count": 20,
+          "p50Ms": 108.2,
+          "p95Ms": 214.7,
+          "p99Ms": 218.68,
+          "maxMs": 218.68
+        },
+        "feed-next": {
+          "count": 19,
+          "p50Ms": 109.4,
+          "p95Ms": 213.73,
+          "p99Ms": 213.73,
+          "maxMs": 213.73
+        },
+        "library": {
+          "count": 30,
+          "p50Ms": 104.12,
+          "p95Ms": 208.46,
+          "p99Ms": 214.61,
+          "maxMs": 214.61
+        },
+        "search": {
+          "count": 10,
+          "p50Ms": 190.86,
+          "p95Ms": 217.82,
+          "p99Ms": 217.82,
+          "maxMs": 217.82
+        },
+        "trends": {
+          "count": 30,
+          "p50Ms": 103.71,
+          "p95Ms": 212.82,
+          "p99Ms": 213.64,
+          "maxMs": 213.64
+        },
+        "detail": {
+          "count": 30,
+          "p50Ms": 103.67,
+          "p95Ms": 212.83,
+          "p99Ms": 215.05,
+          "maxMs": 215.05
+        },
+        "profile": {
+          "count": 30,
+          "p50Ms": 103.36,
+          "p95Ms": 208.07,
+          "p99Ms": 211.79,
+          "maxMs": 211.79
+        },
+        "observability": {
+          "count": 30,
+          "p50Ms": 103.17,
+          "p95Ms": 193.32,
+          "p99Ms": 212.11,
+          "maxMs": 212.11
+        },
+        "feedback": {
+          "count": 30,
+          "p50Ms": 103.72,
+          "p95Ms": 212.43,
+          "p99Ms": 225.07,
+          "maxMs": 225.07
+        }
+      },
+      "failureExamples": [],
+      "throttleExamples": [
+        {
+          "name": "search",
+          "message": "Error: POST /api/search -> 429",
+          "durationMs": 193.74570000000017
+        },
+        {
+          "name": "search",
+          "message": "Error: POST /api/search -> 429",
+          "durationMs": 174.5625
+        },
+        {
+          "name": "search",
+          "message": "Error: POST /api/search -> 429",
+          "durationMs": 130.98260000000005
+        },
+        {
+          "name": "search",
+          "message": "Error: POST /api/search -> 429",
+          "durationMs": 114.36930000000007
+        },
+        {
+          "name": "search",
+          "message": "Error: POST /api/search -> 429",
+          "durationMs": 112.23530000000005
+        }
+      ]
+    },
+    {
+      "name": "burst",
+      "concurrency": 50,
+      "total": 250,
+      "succeeded": 150,
+      "throttled": 100,
+      "failed": 0,
+      "errorRate": 0,
+      "throttleRate": 0.4,
+      "wallMs": 1066.04,
+      "responseThroughputRps": 234.51,
+      "acceptedThroughputRps": 140.71,
+      "latency": {
+        "count": 150,
+        "p50Ms": 202.38,
+        "p95Ms": 232.12,
+        "p99Ms": 235.65,
+        "maxMs": 238.49
+      },
+      "throttleLatency": {
+        "count": 100,
+        "p50Ms": 203.28,
+        "p95Ms": 233.34,
+        "p99Ms": 237.32,
+        "maxMs": 237.35
+      },
+      "endpoints": {
+        "library": {
+          "count": 25,
+          "p50Ms": 200.63,
+          "p95Ms": 231.93,
+          "p99Ms": 235.65,
+          "maxMs": 235.65
+        },
+        "trends": {
+          "count": 25,
+          "p50Ms": 202.06,
+          "p95Ms": 231.22,
+          "p99Ms": 234.67,
+          "maxMs": 234.67
+        },
+        "detail": {
+          "count": 25,
+          "p50Ms": 202.38,
+          "p95Ms": 230.3,
+          "p99Ms": 231.38,
+          "maxMs": 231.38
+        },
+        "profile": {
+          "count": 25,
+          "p50Ms": 202.99,
+          "p95Ms": 232.53,
+          "p99Ms": 233.79,
+          "maxMs": 233.79
+        },
+        "observability": {
+          "count": 25,
+          "p50Ms": 203.22,
+          "p95Ms": 232.53,
+          "p99Ms": 234.13,
+          "maxMs": 234.13
+        },
+        "feedback": {
+          "count": 25,
+          "p50Ms": 206.23,
+          "p95Ms": 232.12,
+          "p99Ms": 238.49,
+          "maxMs": 238.49
+        }
+      },
+      "failureExamples": [],
+      "throttleExamples": [
+        {
+          "name": "feed",
+          "message": "Error: GET /api/feed?batch=0 -> 429",
+          "durationMs": 22.03769999999986
+        },
+        {
+          "name": "feed-next",
+          "message": "Error: GET /api/feed?batch=1 -> 429",
+          "durationMs": 22.95580000000018
+        },
+        {
+          "name": "feed",
+          "message": "Error: GET /api/feed?batch=0 -> 429",
+          "durationMs": 37.742399999999634
+        },
+        {
+          "name": "feed-next",
+          "message": "Error: GET /api/feed?batch=2 -> 429",
+          "durationMs": 38.85050000000001
+        },
+        {
+          "name": "search",
+          "message": "Error: POST /api/search -> 429",
+          "durationMs": 74.53859999999986
+        }
+      ]
+    }
+  ],
+  "observability": {
+    "metrics": {
+      "cacheHits": 30,
+      "cacheMisses": 30,
+      "searchCount": 30,
+      "feedGenerations": 30,
+      "negativeFeedback": 65,
+      "fetchSuccess": 0,
+      "fetchFailure": 0,
+      "queueLength": 0,
+      "indexDelayHours": 0,
+      "modelCalls": 0,
+      "exposureCount": 10,
+      "interactionCount": 75,
+      "negativeFeedbackRate": 0.8666666666666667,
+      "cacheHitRate": 0.5,
+      "fetchSuccessRate": 1,
+      "githubIndexedRepositories": 0
+    },
+    "distributions": {
+      "languages": {},
+      "organizations": {
+        "jupyterlab": 1,
+        "manimcommunity": 1,
+        "mrdoob": 1,
+        "pyodide": 1,
+        "scikit": 1,
+        "matplotlib": 1,
+        "freecodecamp": 1,
+        "shadcn": 1,
+        "gpuweb": 1,
+        "babylonjs": 1
+      }
+    },
+    "recentSearchLatency": [
+      16.6,
+      15.9,
+      15.2,
+      14.66,
+      17.71,
+      13.8,
+      16.06,
+      13.84,
+      15.23,
+      13.45,
+      14.94,
+      15.08,
+      16.4,
+      12.79,
+      14.28,
+      13.31,
+      14.37,
+      14.24,
+      19.59,
+      15.1
+    ],
+    "mode": "demo",
+    "githubSync": {
+      "status": "idle",
+      "indexedCount": 0,
+      "source": "none"
+    },
+    "dataUpdatedAt": "2026-07-18T08:00:00.000Z"
+  }
+}

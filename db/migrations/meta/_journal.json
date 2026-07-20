@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1784394532819,
+      "tag": "0000_condemned_lady_ursula",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1784436432864,
+      "tag": "0001_skinny_clint_barton",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1784496403918,
+      "tag": "0002_lyrical_unus",
+      "breakpoints": true
+    }
+  ]
+}

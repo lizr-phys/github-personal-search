@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-07-19T14:53:46.682Z",
+  "baseUrl": "http://localhost:3200",
+  "runtime": "server-configured",
+  "scenarios": {
+    "feedColdMs": 24.88,
+    "feedWarm": {
+      "count": 12,
+      "p50Ms": 14.09,
+      "p95Ms": 15.65,
+      "p99Ms": 15.65,
+      "maxMs": 15.65
+    },
+    "feedNext": {
+      "count": 4,
+      "p50Ms": 16.05,
+      "p95Ms": 17,
+      "p99Ms": 17,
+      "maxMs": 17
+    },
+    "feedback": {
+      "count": 8,
+      "p50Ms": 13.31,
+      "p95Ms": 14.48,
+      "p99Ms": 14.48,
+      "maxMs": 14.48
+    },
+    "searchColdMs": 61.48,
+    "searchWarm": {
+      "count": 8,
+      "p50Ms": 20.66,
+      "p95Ms": 23.03,
+      "p99Ms": 23.03,
+      "maxMs": 23.03
+    },
+    "searchBurst": {
+      "count": 10,
+      "p50Ms": 284.31,
+      "p95Ms": 345.52,
+      "p99Ms": 345.52,
+      "maxMs": 345.52,
+      "concurrency": 10,
+      "wallMs": 349.97,
+      "throughputRps": 28.57,
+      "errors": 0
+    },
+    "readEndpoints": {
+      "/api/library": 20.02,
+      "/api/trends?window=7d": 9.92,
+      "/api/repositories/laurent22/joplin": 13.98
+    }
+  },
+  "process": {
+    "node": "v24.14.0",
+    "rssMb": 71.6
+  }
+}

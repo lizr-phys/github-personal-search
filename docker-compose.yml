@@ -1,0 +1,78 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: gps
+      POSTGRES_PASSWORD: gps
+      POSTGRES_DB: gps
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gps -d gps"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    volumes:
+      - gps_postgres:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7.4-alpine
+    command: redis-server --appendonly yes
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    volumes:
+      - gps_redis:/data
+
+  mailpit:
+    image: axllent/mailpit:v1.28
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+
+  web:
+    profiles: ["app"]
+    build: .
+    environment:
+      APP_URL: http://localhost:3000
+      GPS_DEMO_MODE: "true"
+      GPS_RUNTIME_STORE: file
+      GPS_DATA_FILE: .data/gps-demo.json
+      DATABASE_URL: postgres://gps:gps@postgres:5432/gps
+      REDIS_URL: redis://redis:6379
+      SMTP_HOST: mailpit
+      SMTP_PORT: 1025
+      SESSION_SECRET: ${SESSION_SECRET:-docker-development-secret-change-in-production}
+      TOKEN_ENCRYPTION_KEY: ${TOKEN_ENCRYPTION_KEY:-docker-development-encryption-key}
+    ports:
+      - "3000:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - gps_app_data:/app/.data
+
+  worker:
+    profiles: ["app"]
+    build: .
+    command: ["pnpm", "worker"]
+    environment:
+      DATABASE_URL: postgres://gps:gps@postgres:5432/gps
+      REDIS_URL: redis://redis:6379
+      GPS_DEMO_MODE: "true"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+volumes:
+  gps_postgres:
+  gps_redis:
+  gps_app_data:

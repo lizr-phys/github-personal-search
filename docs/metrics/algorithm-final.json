@@ -1,0 +1,363 @@
+{
+  "generatedAt": "2026-07-19T05:24:26.564Z",
+  "corpusSize": 48,
+  "queryCount": 18,
+  "metrics": {
+    "recallAt10": 0.8182,
+    "precisionAt10": 0.2813,
+    "ndcgAt10": 0.7855,
+    "mrr": 0.8824,
+    "hardConstraintViolationRate": 0.0078,
+    "duplicateRate": 0,
+    "averageClusterCoverageAt10": 6.111,
+    "emptyQueryFalsePositives": 0,
+    "p50Ms": 6.815,
+    "p95Ms": 103.907,
+    "p99Ms": 103.907
+  },
+  "cases": [
+    {
+      "id": "zh-quantum-visualization",
+      "durationMs": 103.907,
+      "recallAt10": 0.5,
+      "precisionAt10": 0.1,
+      "ndcgAt10": 0.7126,
+      "mrr": 1,
+      "hardViolations": 0,
+      "clusters": 8,
+      "topIds": [
+        "qmsolve-qmsolve",
+        "jupyterlab-jupyterlab",
+        "apache-echarts",
+        "geogebra-geogebra",
+        "pyodide-pyodide",
+        "freecodecamp-freecodecamp",
+        "falstad-circuitjs1",
+        "d3-d3",
+        "recharts-recharts",
+        "toeverything-affine"
+      ]
+    },
+    {
+      "id": "zh-physics-learning",
+      "durationMs": 24.621,
+      "recallAt10": 0.75,
+      "precisionAt10": 0.3,
+      "ndcgAt10": 0.521,
+      "mrr": 1,
+      "hardViolations": 0,
+      "clusters": 10,
+      "topIds": [
+        "geogebra-geogebra",
+        "freecodecamp-freecodecamp",
+        "phetsims-energy-skate-park",
+        "pyodide-pyodide",
+        "grafana-grafana",
+        "manimcommunity-manim",
+        "jupyterlab-jupyterlab",
+        "d3-d3",
+        "qmsolve-qmsolve",
+        "appflowy-io-appflowy"
+      ]
+    },
+    {
+      "id": "mixed-pkm-self-hosted",
+      "durationMs": 12.799,
+      "recallAt10": 1,
+      "precisionAt10": 0.4,
+      "ndcgAt10": 0.6371,
+      "mrr": 0.5,
+      "hardViolations": 0,
+      "clusters": 8,
+      "topIds": [
+        "usememos-memos",
+        "siyuan-note-siyuan",
+        "appflowy-io-appflowy",
+        "laurent22-joplin",
+        "miniflux-v2",
+        "grafana-grafana",
+        "triliumnext-trilium",
+        "all-hands-ai-openhands",
+        "go-gitea-gitea",
+        "toeverything-affine"
+      ]
+    },
+    {
+      "id": "webgpu-science",
+      "durationMs": 22.526,
+      "recallAt10": 1,
+      "precisionAt10": 0.3,
+      "ndcgAt10": 0.9271,
+      "mrr": 1,
+      "hardViolations": 0,
+      "clusters": 10,
+      "topIds": [
+        "webgpu-webgpu-samples",
+        "gfx-rs-wgpu",
+        "gpuweb-gpuweb",
+        "pyodide-pyodide",
+        "falstad-circuitjs1",
+        "babylonjs-babylon-js",
+        "jupyterlab-jupyterlab",
+        "geogebra-geogebra",
+        "freecodecamp-freecodecamp",
+        "manimcommunity-manim"
+      ]
+    },
+    {
+      "id": "agent-extensible",
+      "durationMs": 6.419,
+      "recallAt10": 0.6,
+      "precisionAt10": 0.375,
+      "ndcgAt10": 0.5151,
+      "mrr": 1,
+      "hardViolations": 0,
+      "clusters": 6,
+      "topIds": [
+        "crewaiinc-crewai",
+        "vercel-next-js",
+        "babylonjs-babylon-js",
+        "pyodide-pyodide",
+        "langchain-ai-langgraph",
+        "manimcommunity-manim",
+        "gpuweb-gpuweb",
+        "microsoft-autogen"
+      ]
+    },
+    {
+      "id": "react-visualization-library",
+      "durationMs": 7.26,
+      "recallAt10": 1,
+      "precisionAt10": 0.4,
+      "ndcgAt10": 0.8754,
+      "mrr": 1,
+      "hardViolations": 0,
+      "clusters": 7,
+      "topIds": [
+        "recharts-recharts",
+        "matplotlib-matplotlib",
+        "qmsolve-qmsolve",
+        "mrdoob-three-js",
+        "d3-d3",
+        "observablehq-plot",
+        "apache-echarts",
+        "scikit-image-scikit-image",
+        "gfx-rs-wgpu",
+        "browser-use-browser-use"
+      ]
+    },
+    {
+      "id": "latest-self-hosted-photo",
+      "durationMs": 8.716,
+      "recallAt10": 1,
+      "precisionAt10": 0.1,
+      "ndcgAt10": 1,
+      "mrr": 1,
+      "hardViolations": 0,
+      "clusters": 9,
+      "topIds": [
+        "immich-app-immich",
+        "all-hands-ai-openhands",
+        "grafana-grafana",
+        "appflowy-io-appflowy",
+        "go-gitea-gitea",
+        "hoppscotch-hoppscotch",
+        "laurent22-joplin",
+        "siyuan-note-siyuan",
+        "usememos-memos",
+        "outline-outline"
+      ]
+    },
+    {
+      "id": "go-rss",
+      "durationMs": 5.342,
+      "recallAt10": 1,
+      "precisionAt10": 0.2,
+      "ndcgAt10": 1,
+      "mrr": 1,
+      "hardViolations": 0,
+      "clusters": 5,
+      "topIds": [
+        "miniflux-v2",
+        "grafana-grafana",
+        "go-gitea-gitea",
+        "usememos-memos",
+        "siyuan-note-siyuan"
+      ]
+    },
+    {
+      "id": "browser-agent",
+      "durationMs": 13.7,
+      "recallAt10": 1,
+      "precisionAt10": 0.1,
+      "ndcgAt10": 0.6352,
+      "mrr": 0.5,
+      "hardViolations": 0,
+      "clusters": 7,
+      "topIds": [
+        "crewaiinc-crewai",
+        "browser-use-browser-use",
+        "significant-gravitas-autogpt",
+        "all-hands-ai-openhands",
+        "pyodide-pyodide",
+        "langchain-ai-langgraph",
+        "shadcn-ui-ui",
+        "grafana-grafana",
+        "microsoft-autogen",
+        "vitejs-vite"
+      ]
+    },
+    {
+      "id": "beginner-python-algorithms",
+      "durationMs": 5.435,
+      "recallAt10": 0.5,
+      "precisionAt10": 1,
+      "ndcgAt10": 0.7453,
+      "mrr": 1,
+      "hardViolations": 0,
+      "clusters": 1,
+      "topIds": [
+        "thealgorithms-python"
+      ]
+    },
+    {
+      "id": "vue-api-self-hosted",
+      "durationMs": 4.974,
+      "recallAt10": 1,
+      "precisionAt10": 0.5,
+      "ndcgAt10": 1,
+      "mrr": 1,
+      "hardViolations": 0,
+      "clusters": 2,
+      "topIds": [
+        "hoppscotch-hoppscotch",
+        "go-gitea-gitea"
+      ]
+    },
+    {
+      "id": "go-git-service",
+      "durationMs": 5.947,
+      "recallAt10": 1,
+      "precisionAt10": 0.2,
+      "ndcgAt10": 1,
+      "mrr": 1,
+      "hardViolations": 0,
+      "clusters": 5,
+      "topIds": [
+        "go-gitea-gitea",
+        "grafana-grafana",
+        "usememos-memos",
+        "miniflux-v2",
+        "siyuan-note-siyuan"
+      ]
+    },
+    {
+      "id": "typo-webgpu",
+      "durationMs": 10.354,
+      "recallAt10": 1,
+      "precisionAt10": 0.3,
+      "ndcgAt10": 1,
+      "mrr": 1,
+      "hardViolations": 0,
+      "clusters": 9,
+      "topIds": [
+        "webgpu-webgpu-samples",
+        "gpuweb-gpuweb",
+        "gfx-rs-wgpu",
+        "tensorflow-tfjs",
+        "babylonjs-babylon-js",
+        "scikit-image-scikit-image",
+        "vercel-next-js",
+        "pyodide-pyodide",
+        "apache-echarts",
+        "matplotlib-matplotlib"
+      ]
+    },
+    {
+      "id": "negative-react",
+      "durationMs": 6.815,
+      "recallAt10": 1,
+      "precisionAt10": 0.2,
+      "ndcgAt10": 0.4499,
+      "mrr": 0.5,
+      "hardViolations": 0,
+      "clusters": 8,
+      "topIds": [
+        "appflowy-io-appflowy",
+        "triliumnext-trilium",
+        "significant-gravitas-autogpt",
+        "immich-app-immich",
+        "go-gitea-gitea",
+        "hoppscotch-hoppscotch",
+        "siyuan-note-siyuan",
+        "freecodecamp-freecodecamp",
+        "jupyterlab-jupyterlab",
+        "miniflux-v2"
+      ]
+    },
+    {
+      "id": "classic-js-visualization",
+      "durationMs": 5.021,
+      "recallAt10": 0.75,
+      "precisionAt10": 0.75,
+      "ndcgAt10": 0.6767,
+      "mrr": 1,
+      "hardViolations": 1,
+      "clusters": 3,
+      "topIds": [
+        "observablehq-plot",
+        "mrdoob-three-js",
+        "tensorflow-tfjs",
+        "d3-d3"
+      ]
+    },
+    {
+      "id": "niche-science",
+      "durationMs": 14.509,
+      "recallAt10": 0.5,
+      "precisionAt10": 0.2,
+      "ndcgAt10": 0.523,
+      "mrr": 0.5,
+      "hardViolations": 0,
+      "clusters": 10,
+      "topIds": [
+        "grafana-grafana",
+        "observablehq-plot",
+        "manimcommunity-manim",
+        "qmsolve-qmsolve",
+        "geogebra-geogebra",
+        "logseq-logseq",
+        "appflowy-io-appflowy",
+        "gfx-rs-wgpu",
+        "mrdoob-three-js",
+        "codecrafters-io-build-your-own-x"
+      ]
+    },
+    {
+      "id": "temporary-interest-conflict",
+      "durationMs": 4.999,
+      "recallAt10": 1,
+      "precisionAt10": 0.6667,
+      "ndcgAt10": 0.9197,
+      "mrr": 1,
+      "hardViolations": 0,
+      "clusters": 2,
+      "topIds": [
+        "shadcn-ui-ui",
+        "vitejs-vite",
+        "storybookjs-storybook"
+      ]
+    },
+    {
+      "id": "no-quality-result",
+      "durationMs": 4.909,
+      "recallAt10": null,
+      "precisionAt10": 0,
+      "ndcgAt10": 1,
+      "mrr": 0,
+      "hardViolations": 0,
+      "clusters": 0,
+      "topIds": []
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-07-19T13:29:24.306Z",
+  "baseUrl": "http://localhost:3200",
+  "runtime": "server-configured",
+  "scenarios": {
+    "feedColdMs": 51.84,
+    "feedWarm": {
+      "count": 12,
+      "p50Ms": 10.02,
+      "p95Ms": 11.8,
+      "p99Ms": 11.8,
+      "maxMs": 11.8
+    },
+    "feedNext": {
+      "count": 4,
+      "p50Ms": 12.68,
+      "p95Ms": 13.26,
+      "p99Ms": 13.26,
+      "maxMs": 13.26
+    },
+    "feedback": {
+      "count": 8,
+      "p50Ms": 10.24,
+      "p95Ms": 16.21,
+      "p99Ms": 16.21,
+      "maxMs": 16.21
+    },
+    "searchColdMs": 110.65,
+    "searchWarm": {
+      "count": 8,
+      "p50Ms": 45.54,
+      "p95Ms": 46.24,
+      "p99Ms": 46.24,
+      "maxMs": 46.24
+    },
+    "searchBurst": {
+      "count": 10,
+      "p50Ms": 334.22,
+      "p95Ms": 367.49,
+      "p99Ms": 367.49,
+      "maxMs": 367.49,
+      "concurrency": 10,
+      "wallMs": 371.73,
+      "throughputRps": 26.9,
+      "errors": 0
+    },
+    "readEndpoints": {
+      "/api/library": 19.04,
+      "/api/trends?window=7d": 13.31,
+      "/api/repositories/grafana/grafana": 18.51
+    }
+  },
+  "process": {
+    "node": "v24.14.0",
+    "rssMb": 71.5
+  }
+}
